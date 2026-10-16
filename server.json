@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "io.github.praneeth12098/x402-factory",
-  "description": "200+ paid data APIs for AI agents (prediction markets, verified weather, econ prints, SEC filings) via x402 micropayments; free proof surfaces and delayed feeds served without payment.",
+  "description": "200+ x402 paid data APIs for AI agents: prediction markets, verified weather, econ, SEC filings",
   "repository": {
     "url": "https://github.com/praneeth12098/x402-factory-clients",
     "source": "github"
