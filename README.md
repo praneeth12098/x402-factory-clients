@@ -15,10 +15,11 @@ The platform publishes its own scorecards, free forever:
   station observations, segmented by lead/region/method/model-version:
   [`/v1/verification/scores`](https://x402-factory.com/v1/verification/scores).
   Under the current model the station blend beats raw NWS at short leads
-  (as of 2026-10-15, 90-day window, model runway-oracle-v4.5 across 25
-  stations: MAE 0.74 vs 1.13 °C at 1-hour lead, n=1,441; 0.76 vs 1.17 at
-  3h; converging to NWS parity by 24h — the decay the method predicts.
-  Read the live table for current numbers and n).
+  (as of 2026-10-15, 90-day rolling window, on the `nws-blend` segment —
+  the same-sample paired comparison against the NWS baseline: temperature
+  MAE 0.84 vs 1.14 °C at 1-hour lead, n=3,506; 0.89 vs 1.16 at 3h;
+  converging to NWS parity by 24h — the decay the method predicts.
+  Recompute it yourself: filter the live table to segment `nws-blend`).
 - **Model-vs-market calibration gate** — market classes are sold only
   when their own resolved history proves calibrated; the full reliability
   table (and what is currently *withheld*, with reasons) is public:
